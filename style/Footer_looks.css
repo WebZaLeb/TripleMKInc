@@ -2,7 +2,21 @@
 body{
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #FCF5EF;
 }
+
+#contact-btn:hover{
+    background:#52a2ec;
+    text-shadow: 0.1px 0.1px 1px black;
+}
+
+#contact-btn{
+    background: #2c7dbcff;
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px rgb(36, 35, 35);
+    
+}
+
 footer .main-footer {
     padding: 20px 0;
     background: #eadedaff;
