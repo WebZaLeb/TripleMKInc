@@ -1,5 +1,6 @@
 #container-success{
     position: relative;
+    margin-bottom: 5vw;
 }
 #div-success {
     width: 1000px;
@@ -7,6 +8,9 @@
     margin: 0 auto;
     padding: 5%;
     position: relative;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 2px #363636;
+    
 }
 /* Vertically Aligns Text -- */
 #div-success h2 {
