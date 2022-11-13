@@ -1,6 +1,6 @@
 #stat-cards-div {
-    padding: 50px 0px;
     background-color: #FCF5EF;
+    height: 500px;
 }
 
 #delivery-time {
@@ -73,6 +73,7 @@
     width: 306px;
     height: 227px;
     transition: all 0.05s ease-out;
+    margin-bottom: 20px;
 }
 
 .counter-box.colored p,
