@@ -3,6 +3,7 @@ body{
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #FCF5EF;
+    max-width: 100%;
 }
 
 #contact-btn:hover{
