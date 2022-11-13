@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TripleMK</title>
   <link rel="stylesheet" href="style/navBar-Styling.css" type="text/css">
+  <link rel="stylesheet" href="style/percentageAndNumber-styling.css" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -16,17 +17,20 @@
     crossorigin="anonymous"></script>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
   <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet' />
+  <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style/Footer_looks.css" type="text/css">
   <link rel="stylesheet" href="style/success.css" type="text/css">
-  <link rel="stylesheet" href="style/header.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <script type="text/javascript">
     (function () {
       emailjs.init("eX6kbLprlo5kpNWFO");
     })();
   </script>
-  <script src="scripts/navbarAnimation.js"></script>
+  <script type="text/javascript" src="scripts/navbarAnimation.js"></script>
+  <script type="text/javascript" src="scripts/percentageAndNumbersAnimation.js"></script>
 </head>
 
 <body>
@@ -39,8 +43,9 @@
             href="#">
             <img id="company-logo" src="images/Transparent Small TripleMKIncLogo.png" alt="">
           </a>
-          <button id="burger-button" style="color: white;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button id="burger-button" style="color: white;" class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -64,13 +69,13 @@
       </div>
     </div>
   </header>
-  <div class="container text-center" id="main-container">
-    <div class="row bg-black" style="text-align: left;">
-      <div class="text-align-center px-0" id="header" style="background-image: url(images/HOME_HEADER.jpg);">
-        <div  style="height:200px;">
+  <div id="main-container" class="container">
+    <div class="row" style="text-align: left;">
+      <div class="text-align-center px-0" style="background-image: url(images/HOME_HEADER.jpg);">
+        <div class="bg-warning" style="height:180px;opacity: 90%;">
         </div>
       </div>
-      <h1 class="text-danger position-absolute w-50" style="padding-left: 13%;padding-top:60px;opacity:1;font-size: 48px;">
+      <h1 class="text-danger position-absolute" style="padding-left: 13%;padding-top:60px;opacity:1;font-size: 48px;">
         <strong>Home</strong>
       </h1>
     </div>
@@ -122,33 +127,45 @@
     </div>
     <div class="row bg-info text-dark align-middle" id="container-success" style="height: 200px">
       <div id="div-success">
-        <h2 >We do not usually judge success by numbers, but we do know that they do make a difference.</h2>
+        <h2 class="align-middle">We do not usually judge success by numbers, but we do know that they do make a
+          difference.</h2>
       </div>
     </div>
-    <div class="row bg-dark text-white" style="height: 300px">
-      <div class="col-4 border border-danger border-5">Percentage</div>
-      <div class="col-4 border border-danger border-5">Percentage</div>
-      <div class="col-4 border border-danger border-5">Percentage</div>
+    <div id="stat-cards-div" class="row text-white d-flex align-items-center justify-content-around">
+      <div class="counter-box colored">
+        <img id="delivery-time" src="images/road-trans.gif">
+        <div class="numbers">
+          <span class="counter" style="display: inline-block;">2000000</span><span class="percentage-and-plus-signs">+</span>
+        </div>
+        <p>Miles driven</p>
+      </div>
+      <div class="counter-box colored">
+        <img id="truck-number" src="images/output-onlinegiftools.gif">
+        <div class="numbers">
+          <span class="counter" style="display: inline-block;">5</span><span class="percentage-and-plus-signs">+</span>
+        </div>
+        <p>Trucks in the fleet</p>
+      </div>
+      <div class="counter-box colored">
+        <img id="delivery-timer" src="images/timer-trans.gif">
+        <div class="numbers">
+          <span class="counter" style="display: inline-block;">98</span><span class="percentage-and-plus-signs">%</span>
+        </div>
+        <p>On time</p>
+      </div>
     </div>
-    <div class="row text-dark py-5 px-5">
-      <div class="col" style="background: linear-gradient(to bottom right,rgb(57, 159, 236), rgb(30, 85, 128));border-radius: 18px 100px;">
+    <div class="row bg-warning text-dark py-5">
+      <div class="col border border-danger border-5">
         <div class="container px-4 py-5">
           <div class="row align-items-center g-lg-5 py-5">
-            <div class="col-lg-6 text-center text-lg-start text-white px-5">
-              <div class="text-center">
-                <h1 class="display-4 fw-bold lh-1 mb-5"
-                  style="text-align:justify;text-shadow: 2.5px 2.5px 1px rgb(43, 42, 42);">Contact TripleMKInc</h1>
-                <p class="fs-4 pt-2 " style="text-align:justify;text-shadow: 1.5px 1.5px rgb(58, 58, 58);">Need to
-                  deliver your cargo in a effective and efficient way?</p>
-                <p class="fs-4" style="text-align:justify;text-shadow: 1.5px 1.5px rgb(58, 58, 58);">
-                  Contact us through the form on the right and one of our team members will get back to you as soon as
-                  possible.</p>
-              </div>
-              <div class="mb-3 my-auto shadow-lg" style="display:block;background-color: white;border-radius:50%;width: 200px;height: 200px;margin: auto;text-align: center;line-height: 200px;"><img style="width: 150px;height:150px;" src="/images/transparent-mail.png"></div>
+            <div class="col-lg-7 text-center text-lg-start">
+              <h1 class="display-4 fw-bold lh-1 mb-3">Contact TripleMKInc</h1>
+              <p class="fs-4">Below is an example form built entirely with Bootstrap’s form controls.
+                Each required form group has a validation state that can be triggered by attempting
+                to submit the form without completing it.</p>
             </div>
-            <div class="col-md-12 col-sm-12 mx-auto  col-lg-5">
-              <form class="p-4 p-md-5 border rounded-4" id="contactForm"
-                style="background-color: #eadedaff;box-shadow: 15px 15px 5px rgb(0, 55, 100);">
+            <div class="col-md-12 col-sm-12 mx-auto col-lg-5">
+              <form class="p-4 p-md-5 border rounded-3 bg-light" id="contactForm">
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" id="nameInput" placeholder="John" required>
                   <label for="nameInput">Name</label>
@@ -169,22 +186,26 @@
                   <textarea type="text" class="form-control" id="message" placeholder="Your Message"></textarea>
                   <label for="message">Your Message</label>
                 </div>
-                <button type="submit" class="w-100 btn mt-5 text-white" id="contact-btn">Contact Us</button>
+                <button type="submit" class="w-100 btn btn-lg btn-primary">Contact Us</button>
               </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="row bg-primary text-white" style="height: 300px">
+      <div class="col border border-dark border-5">Footer</div>
+    </div>
   </div>
   <footer id="footer" class="footer-1">
     <div class="main-footer widgets-dark typo-light pb-0">
       <div class="container">
         <div class="row justify-content-around">
+
           <div class="col-xs-12 col-sm-6 col-md-3">
             <div class="widget subscribe no-box">
               <h5 class="widget-title">Triple MK Inc.<span></span></h5>
-             <p>Our mission is to provide best in class transportation services to our customers safely and
+              <p>Our mission is to provide best in class transportation services to our customers safely and
                 efficiently.
               </p>
             </div>
@@ -194,6 +215,7 @@
               <h5 class="widget-title">Follow up<span></span></h5>
               <a href="https://www.facebook.com/profile.php?id=100084802839218"> <i class="fa fa-facebook"> </i> </a>
               <a id="mail" href="#"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+              <!-- Add link to form -->
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-3">

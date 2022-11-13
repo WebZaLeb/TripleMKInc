@@ -1,0 +1,82 @@
+#stat-cards-div {
+    padding: 50px 0px;
+    background-color: #FCF5EF;
+}
+
+#delivery-time {
+    width: 110px;
+    height: 110px;
+    padding-bottom: 10px;
+}
+
+#truck-number {
+    width: 110px;
+    height: 110px;
+    padding-bottom: 10px;
+}
+
+#delivery-timer {
+    width: 110px;
+    height: 110px;
+    padding-bottom: 10px;
+}
+
+.percentage-and-plus-signs {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.numbers {
+    height: 38px;
+}
+
+.counter-box {
+    display: block;
+    background: #f6f6f6;
+    padding: 40px 20px 37px;
+    text-align: center
+}
+
+.counter-box p {
+    margin: 5px 0 0;
+    padding: 0;
+    color: #909090;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.counter-box i {
+    font-size: 60px;
+    margin: 0 0 15px !important;
+    color: #d2d2d2
+}
+
+.counter {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #666;
+    line-height: 28px
+}
+
+.counter-box.colored:hover {
+    width: 321.3px;
+    height: 238.35px;
+    box-shadow: 10px 10px 15px 4px #9E9688;
+}
+
+.counter-box.colored {
+    box-shadow: 7px 7px 7px 2px #9E9688;
+    border-radius: 10px;
+    background: #eaeaea;
+    width: 306px;
+    height: 227px;
+    transition: all 0.05s ease-out;
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+    color: black
+}
