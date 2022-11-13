@@ -201,9 +201,13 @@ footer.light .footer-copyright {
     font: normal normal normal 14px/1 FontAwesome;
     background-color: #3e3e3e;
     color: #fff;
-    padding: 9px;
+    padding: 15px;
     border-radius: 5px;
+    max-width: 40px;
 }
 #phone {
     color: black;
+}
+.widget > a {
+    text-decoration: none;
 }
