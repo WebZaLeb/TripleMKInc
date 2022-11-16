@@ -1,3 +1,10 @@
+@media screen and (width <= 550px) {
+    #stat-cards-div {
+        background-color: #FCF5EF;
+        height: 760px !important;
+    }
+}
+
 #stat-cards-div {
     background-color: #FCF5EF;
     height: 500px;
