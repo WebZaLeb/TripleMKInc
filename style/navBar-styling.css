@@ -25,11 +25,11 @@
 
     #burger-button {
         margin-top: 10px;
-        margin-right: 40px;
+        margin-right: 55px;
     }
 
     #parent-div {
-        height: 70px !important;
+        height: 360px !important;
     }
 
     #dynamic-navbar {
@@ -43,23 +43,7 @@
     }
 }
 
-@media screen and (650px < width < 920px) {
-
-    .nav-item {
-        justify-content: center;
-    }
-
-    #burger-button {
-        margin-top: 10px;
-        margin-right: 55px;
-    }
-
-    #ul-for-nav-buttons {
-        align-items: center;
-    }
-}
-
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 650px) {
 
     #main-container {
         padding-top: 136px;
