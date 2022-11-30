@@ -1,7 +1,6 @@
 /* Main Footer */
 body{
-
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background-color: #FCF5EF;
     max-width: 100%;
 }
@@ -19,7 +18,7 @@ body{
 }
 
 footer .main-footer {
-    padding: 20px 0;
+    padding: 40px 0;
     background: #eadedaff;
 }
 
@@ -29,7 +28,7 @@ footer ul {
 }
 
 .footer-copyright {
-    background-image: radial-gradient(circle, #eadedaff, whitesmoke, #eadedaff);
+    background-image: radial-gradient(circle, rgb(255, 255, 255), whitesmoke, #eadedaff);
     padding: 8px 0;
 }
 

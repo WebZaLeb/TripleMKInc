@@ -17,7 +17,7 @@
 #home{
     top: 145px;
     padding-left: 20%;
-    padding-top:60px;
+    padding-top:40px;
     opacity:1;
     font-size: 48px;
 }
@@ -33,5 +33,7 @@
     }
     #home{
         top:80px;
+        padding-left: 5%;
+        padding-top:0px;
     }
 }
