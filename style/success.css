@@ -1,0 +1,20 @@
+#container-success{
+    position: relative;
+}
+#div-success {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 5%;
+    position: relative;
+    text-shadow: 0.5px 0.5px 1px #363636;
+}
+
+#div-success h1{
+    font-weight: bold;
+}
+/* Vertically Aligns Text -- */
+#div-success h2 {
+    display: table-cell;
+    vertical-align: middle;
+}

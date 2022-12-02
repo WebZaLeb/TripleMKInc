@@ -1,0 +1,39 @@
+
+#contact-us{
+    border-radius: 18px 100px;
+}
+
+#mail-icon{
+    display:block;
+    background-color: white;
+    border-radius:50%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    line-height: 200px;
+}
+
+#home{
+    top: 145px;
+    padding-left: 20%;
+    padding-top:40px;
+    opacity:1;
+    font-size: 48px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #contact-us{
+        border-radius: 30px;
+    }
+
+    #mail-icon{
+        display: none;
+    }
+    #home{
+        top:80px;
+        padding-left: 5%;
+        padding-top:0px;
+    }
+}
