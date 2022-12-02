@@ -73,6 +73,10 @@
     #ul-for-nav-buttons {
         width: 750px;
     }
+
+    .nav-link {
+        transition: all .5s ease !important;
+    }
     
     a.nav-link:hover {
         color: rgb(94, 26, 26) !important;
@@ -89,6 +93,7 @@
 
 #apply-now-text {
     color: white;
+    transition: all .5s ease !important;
 }
 
 /* #apply-now-text:hover {
